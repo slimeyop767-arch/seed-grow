@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed Growing Guide</title>
+    <link rel="stylesheet" href="grower.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <span class="eyebrow">Seed Guide + Reminder</span>
+            <h1>Grow your seeds with confidence</h1>
+            <p>Use the button below to reveal seed options, then choose a seed to see planting and care instructions.</p>
+        </header>
+
+        <section class="action-card">
+            <button type="button" id="startBtn">Show seed options</button>
+
+            <div id="dropdown-container" class="dropdown-panel">
+                <label for="seedselect">Which seed are you planting?</label>
+                <select id="seedselect">
+                    <option value="" disabled selected>Select a seed...</option>
+                    <option value="tomato">Tomato</option>
+                    <option value="cucumber">Cucumber</option>
+                    <option value="basil">Basil</option>
+                </select>
+                <p class="hint">After selecting a seed, its care guide will appear below.</p>
+            </div>
+        </section>
+
+        <section class="seed-results">
+            <div id="tomato-information" class="revealed-content seed-card">
+                <h3>Tomato</h3>
+                <p>Plant ¼ inch deep in fertile, well-draining soil. Keep soil moist and support vines as they grow.</p>
+                <ul>
+                    <li>Sun: 6+ hours daily</li>
+                    <li>Water: 1–3 times per week</li>
+                    <li>Plant depth: ¼ inch</li>
+                    <li>Tip: Add stakes or cages for support</li>
+                </ul>
+            </div>
+
+            <div id="cucumber-information" class="revealed-content seed-card">
+                <h3>Cucumber</h3>
+                <p>Plant ½ inch deep in loose, nutrient-rich soil. Keep roots cool and water regularly.</p>
+                <ul>
+                    <li>Sun: 6+ hours daily</li>
+                    <li>Water: consistent moisture</li>
+                    <li>Plant depth: ½ inch</li>
+                    <li>Tip: Provide a trellis for vines</li>
+                </ul>
+            </div>
+
+            <div id="basil-information" class="revealed-content seed-card">
+                <h3>Basil</h3>
+                <p>Plant ¼ inch deep in well-draining soil. Pinch back tips to encourage bushy growth.</p>
+                <ul>
+                    <li>Sun: 6+ hours daily</li>
+                    <li>Water: lightly and often</li>
+                    <li>Plant depth: ¼ inch</li>
+                    <li>Tip: Harvest leaves before flowering</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="grower.js"></script>
+</body>
+</html>
